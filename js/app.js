@@ -9,14 +9,14 @@ $(document).ready(function() {
   var $buttonNext = $('#next');
   var regexOnlyNumbers = /^[0-9]+$/;
   var labelErrorOrSuccessMessages = $('label[for="card-number"]');
-    
+
   // Identificar el evento que nos permite capturar el input del usuario
-  $inputCard.on('input', function() {
+  $inputCard.on('input', function() {    
     isValidCreditCard($(this).val().trim());
   });
   
   // Funciones que habilita el boton del formulario
-  function activeButton() {
+  function activeButton() {    
     $buttonNext.attr('disabled', false);
   } 
  
